@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taks-33</title>
+</head>
+<body>
+    <script>
+        //33. Pass an array to a function, modify its first element, and print the modified array. 
+
+        function addElmntToArray(array , element) 
+        {
+            array.unshift(element);
+        }
+        orignalArray = [1,2,3,4,5];
+        console.log("prinying orignal array" , orignalArray);
+        addElmntToArray(orignalArray,20 );
+        console.log("updating the array after calling the function :" ,orignalArray);
+    </script>
+    
+</body>
+</html>

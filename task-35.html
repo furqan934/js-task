@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-35</title>
+</head>
+<body>
+    <script>
+        //35. Check if two variables referencing the same array are equal after modifying one. 
+        // Create an original array
+        let originalArray = [1, 2, 3];
+
+        // Assign the reference to another variable
+        let secondArray = originalArray;
+
+        // Modify the second variable
+        secondArray.push(4); // Add an element to the second array
+        
+        // Check if both variables are equal
+        let areEqual = originalArray.length === secondArray.length && 
+                       originalArray.every((value, index) => value === secondArray[index]);
+        
+        // Print the results
+        console.log('Original Array:', originalArray); // Output: [1, 2, 3, 4]
+        console.log('Second Array:', secondArray);     // Output: [1, 2, 3, 4]
+        console.log('Are both arrays equal?', areEqual);
+    </script>
+</body>
+</html>

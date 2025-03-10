@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-10</title>
+</head>
+<body>
+    <h1>task-10</h1>
+    <script>
+      const array = [1, 2, 3, 4, 5, 6];
+
+         // 1. Extract the middle element(s)
+         const middleIndex = array.length / 2;
+         const middleElements = array.slice(middleIndex - 1, middleIndex + 1);
+         console.log("Middle element(s):", middleElements); 
+    
+         // 2. Replace the two middle elements
+         const newElements = [14, 15];
+         array.splice(middleIndex - 1, 2, ...newElements);
+         console.log("Updated array:", array); 
+    </script>
+    
+</body>
+</html>
